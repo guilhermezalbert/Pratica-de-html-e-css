@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Flexbox e Grid">
+  <rect width="800" height="600" fill="#14213D"/>
+  <circle cx="620" cy="170" r="90" fill="#FCA311" opacity=".9"/>
+  <path d="M0 600 L0 420 L180 280 L330 400 L520 230 L800 440 L800 600 Z" fill="#FCA311" opacity=".55"/>
+  <path d="M0 600 L0 500 L240 380 L430 490 L640 360 L800 480 L800 600 Z" fill="#14213D" opacity=".35"/>
+  <text x="40" y="70" font-family="Arial, sans-serif" font-size="34" fill="#fff">Flexbox e Grid</text>
+</svg>

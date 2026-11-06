@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Avatar com as iniciais GS">
+  <rect width="400" height="400" fill="#14213D"/>
+  <circle cx="200" cy="200" r="150" fill="#FCA311"/>
+  <text x="200" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="120" font-weight="700" fill="#14213D">GS</text>
+</svg>

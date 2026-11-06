@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Guilherme Santos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="topo">
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container">
+      <a class="logo" href="index.html">Guilherme Santos</a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="curriculo.html">Currículo</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="fotos.html">Fotos</a></li>
+          <li><a href="contato.html" class="ativo" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container">
+    <h1>Contato</h1>
+    <p>Preencha o formulário e eu respondo assim que possível.</p>
+
+    <section class="secao">
+      <!-- Formulário apenas visual: sem processamento no servidor -->
+      <form class="formulario" action="#" method="post">
+
+        <div class="campo">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto">
+            <option value="oportunidade">Oportunidade de trabalho</option>
+            <option value="projeto">Projeto em conjunto</option>
+            <option value="duvida">Dúvida</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui sua mensagem" required></textarea>
+        </div>
+
+        <label class="opcao">
+          <input type="checkbox" name="retorno"> Quero receber uma resposta por e-mail
+        </label>
+
+        <div class="botoes">
+          <button class="botao" type="submit">Enviar mensagem</button>
+          <button class="botao botao--contorno" type="reset">Limpar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>&copy; 2026 Guilherme Alberto Afonso dos Santos. Projeto de prática de HTML e CSS.</p>
+      <p><a href="#topo">Voltar ao topo</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Flexbox ou Grid?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="topo">
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container">
+      <a class="logo" href="index.html">Guilherme Santos</a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="curriculo.html">Currículo</a></li>
+          <li><a href="blog.html" class="ativo" aria-current="page">Blog</a></li>
+          <li><a href="fotos.html">Fotos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container">
+    <article class="secao artigo">
+      <h1>Flexbox ou Grid: qual usar?</h1>
+      <p><small>Publicado em 5 de novembro de 2026 · Tema: CSS e layout</small></p>
+
+      <img class="artigo-capa" src="imagens/blog-capa.svg" alt="Ilustração abstrata de montanhas em azul e âmbar com o título Flexbox e Grid">
+
+      <p>
+        Dois jeitos modernos de montar layouts em CSS são o <strong>Flexbox</strong>
+        e o <strong>Grid</strong>. Eles se completam, e saber quando usar cada um
+        deixa o código mais simples.
+      </p>
+
+      <h2>Flexbox: layout em uma direção</h2>
+      <p>
+        Ideal para alinhar itens em uma linha ou coluna, como um menu de navegação.
+      </p>
+      <pre><code>.menu {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}</code></pre>
+
+      <h2>Grid: layout em linhas e colunas</h2>
+      <p>
+        Ideal para controlar as duas direções ao mesmo tempo, como uma galeria de fotos.
+      </p>
+      <pre><code>.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}</code></pre>
+
+      <h2>Como escolher</h2>
+      <ol class="lista">
+        <li>Precisa alinhar itens em uma única linha ou coluna? Use Flexbox.</li>
+        <li>Precisa de linhas e colunas ao mesmo tempo? Use Grid.</li>
+        <li>Pode combinar os dois: Grid para a página e Flexbox dentro dos componentes.</li>
+      </ol>
+
+      <h2>Vídeo de apoio</h2>
+      <figure>
+        <!-- Troque pelo seu arquivo: coloque o vídeo em imagens/ e ajuste o src -->
+        <video controls poster="imagens/video-poster.svg" preload="none">
+          <source src="imagens/aula-grid.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+        <figcaption>Substitua pelo vídeo de sua escolha (arquivo local ou incorporação do YouTube).</figcaption>
+      </figure>
+
+      <h2>Para aprender mais</h2>
+      <ul class="lista">
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank" rel="noopener">Flexbox na MDN</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Grids" target="_blank" rel="noopener">Grid na MDN</a></li>
+      </ul>
+    </article>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>&copy; 2026 Guilherme Alberto Afonso dos Santos. Projeto de prática de HTML e CSS.</p>
+      <p><a href="#topo">Voltar ao topo</a></p>
+    </div>
+  </footer>
+</body>
+</html>
